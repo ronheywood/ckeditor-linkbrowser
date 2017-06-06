@@ -1,4 +1,4 @@
-CKEditor Image Browser plugin
+CKEditor Link Browser plugin
 =============================
 
 **linkbrowser** is a `CKEditor <http://ckeditor.com/>`_ plugin that allows images on the server to be browsed and picked for inclusion into the editor's contents.
