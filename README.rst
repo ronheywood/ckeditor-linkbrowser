@@ -1,8 +1,9 @@
 CKEditor Image Browser plugin
 =============================
 
-**linkbrowser** is a `CKEditor <http://ckeditor.com/>`_ plugin that allows images on the server to be browsed and picked
-for inclusion into the editor's contents.
+**linkbrowser** is a `CKEditor <http://ckeditor.com/>`_ plugin that allows images on the server to be browsed and picked for inclusion into the editor's contents.
+
+This plugin is based on the `ckimagebrowser <https://github.com/spantaleev/ckeditor-imagebrowser>`_ plugin 
 
 This plugin integrates with the **link** plugin (part of CKEditor),
 by making it provide a **Browse Server** button in the link dialog window.
@@ -34,35 +35,28 @@ The **linkBrowser_listUrl** configuration parameter points to a URL that lists t
 
 Example::
 
-	[
-		{
-			"image": "/image1_200x150.jpg",
-			"thumb": "/image1_thumb.jpg",
-			"folder": "Small"
-		},
-		{
-			"image": "/image2_200x150.jpg",
-			"thumb": "/image2_thumb.jpg",
-			"folder": "Small"
-		},
+[
+	{
+		"linkUrl": "https://www.example.com",
+		"folder": "Home",
+		"linkTitle": "Website Home Page"
+	},
+	{
+		"linkUrl": "https://www.example.com/about-us",
+		"linkTitle": "About Us Page",
+		"folder": "About Us"
+	},
+	{
+		"linkUrl": "https://www.example.com/about-us/people",
+		"linkTitle": "About Us | People",
+		"folder": "About Us"
+	}
+]
 
-		{
-			"image": "/image1_full.jpg",
-			"thumb": "/image1_thumb.jpg",
-			"folder": "Large"
-		},
-		{
-			"image": "/image2_full.jpg",
-			"thumb": "/image2_thumb.jpg",
-			"folder": "Large"
-		}
-	]
+The above says that there are 2 page directories ("Home" and "About Us") with pages in each of them.
 
-The above says that there are 2 image directories ("Small" and "Large") with 2 files in each of them.
+The **linkUrl** field is the relative/absolute url being used when the link gets put into the editor's contents.
 
-The **image** field is the relative/absolute path being used when the image gets put into the editor's contents.
+The **linkTitle** field is *optional*. It specifies the title attribute to be used on the link tag.
 
-The **thumb** field is *optional*. It specifies the relative/absolute path to the image's thumbnail (for preview purposes).
-If omitted, the value of **image** is used as a thumbnail.
-
-The **folder** field is *optional*. If omitted, the image list will not be split into folders.
+The **folder** field is *optional*. If omitted, the url list will not be split into folders.
