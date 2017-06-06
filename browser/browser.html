@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<base>
+		<link rel="stylesheet" href="browser.css">
+	</head>
+
+	<body>
+		<script type="text/x-template-html" id="js-template-link">
+			<a href="javascript://" class="page js-page-link" data-url="%linkUrl%">%thumb% (%linkUrl%)</a>
+		</script>
+
+		<ul class="folder-switcher" id="js-folder-switcher"></ul>
+
+		<div class="links-container" id="js-links-container">Loading..</div>
+
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="browser.js"></script>
+
+		<script type="text/javascript">
+			CkEditorLinkBrowser.init();
+		</script>
+	</body>
+</html>
