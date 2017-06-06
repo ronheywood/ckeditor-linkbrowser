@@ -1,0 +1,8 @@
+{
+    "name": "ronheywood/ckeditor-linkbrowser",
+    "autoload": {
+        "psr-0" : {
+            "ronheywood\\ckeditor-linkbrowser" : "src"
+        }
+    }
+}
