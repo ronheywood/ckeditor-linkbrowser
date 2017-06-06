@@ -35,23 +35,23 @@ The **linkBrowser_listUrl** configuration parameter points to a URL that lists t
 
 Example::
 
-[
-	{
-		"linkUrl": "https://www.example.com",
-		"folder": "Home",
-		"linkTitle": "Website Home Page"
-	},
-	{
-		"linkUrl": "https://www.example.com/about-us",
-		"linkTitle": "About Us Page",
-		"folder": "About Us"
-	},
-	{
-		"linkUrl": "https://www.example.com/about-us/people",
-		"linkTitle": "About Us | People",
-		"folder": "About Us"
-	}
-]
+	[
+		{
+			"linkUrl": "https://www.example.com",
+			"folder": "Home",
+			"linkTitle": "Website Home Page"
+		},
+		{
+			"linkUrl": "https://www.example.com/about-us",
+			"linkTitle": "About Us Page",
+			"folder": "About Us"
+		},
+		{
+			"linkUrl": "https://www.example.com/about-us/people",
+			"linkTitle": "About Us | People",
+			"folder": "About Us"
+		}
+	]
 
 The above says that there are 2 page directories ("Home" and "About Us") with pages in each of them.
 
